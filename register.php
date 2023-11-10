@@ -39,6 +39,7 @@
                              </div> <br>";
                        echo "<a href = './index.php'><button class='btn'>Se connecter maintenant</button>"; 
                        // Affiche un message de succès et un bouton de redirection vers la page de connexion
+                       mysqli_close($con); // Fermeture de la connexion MySQLi
                    }
                }
                else{
@@ -77,7 +78,7 @@
             </form>
          </div>
 
-         <?php } ?>
+         <?php }  ?>
 
       </div>
 
